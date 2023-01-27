@@ -1,15 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="阮這鍋即享鍋，主打簡單、健康、美味，並且幫您煮好
+    適合忙碌的上班族，短暫的午休也可以吃到現煮鍋物，即使外帶也不影響口感">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>阮這鍋 | 即享鍋</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="bookmark" href="favicon.ico" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+
 </head>
+
 <body>
-    <header>
-        <h1></h1>
+    <div class="loading_content" id="box">
+
+        <div class="logo_img"><img src="img/logo-white.svg" alt=""></div>
+
+        <div class="wrap">
+            <div class="circle"></div>
+            <div class="circle_top"></div>
+            <div class="circle_bottom"></div>
+        </div>
+        <div class="whitebg"></div>
+
+
+    </div>
+    <!-- header -->
+    <header class="header01">
+        <div class="header_logo"><a href="#"><img src="img/logo-white.svg" alt=""></a></div>
+        <nav class="menu-list">
+            <input type="checkbox" id="menu">
+            <label for="menu" class="line">
+                <div class="menu"></div>
+            </label>
+            <ul class="navi">
+                <li><a href="news.html">最新消息</a></li>
+                <li><a href="about.html">關於我們</a></li>
+                <li><a href="choice.html">嚴選好料</a></li>
+                <li><a href="store.html">門市資訊</a></li>
+                <li><a href="faq.html">常見問題</a></li>
+            </ul>
+        </nav>
+        <ul class="header_social">
+            <li><img src="img/social_fb.svg" alt="facebook連結"></li>
+            <li><img src="img/social_ig.svg" alt="instagram連結"></li>
+            <li><img src="img/social_line.svg" alt="LINE官方帳號連結"></li>
+        </ul>
     </header>
-    
+    <!-- main -->
+    <main>
+        <section>
+            <div class="carousel">
+                <!-- carousel start -->
+                <div class="swiper indexSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="banner" id="banner01"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="banner" id="banner02"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="banner" id="banner03"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!-- carousel End -->
+            </div>
+        </section>
+
+        <section class="news">
+            <div class="index-news-left">
+
+            </div>
+            <div class="index-news">
+                <div class="atext">NEWS</div>
+                <div class="btext">最新消息</div>
+
+                <div class="news_swiper newsSwiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="news_swiper-slide swiper-slide">
+                            <a class="news_list" href="news.html">
+                                <div class="news-img">
+                                    <img src="img/news01.jpg" alt="">
+                                </div>
+                                <div class="news_content">
+
+                                    <div class="news_title">【最新上架 | 官方LINE上線】
+                                        快來加入會員有不定期優惠</div>
+
+                                    <div class="news_date">
+                                        2023/01/17 </div>
+                                </div>
+                            </a>
+                        </div>
+
+
+                        <div class="news_swiper-slide swiper-slide">
+                            <a class="news_list" href="news.html">
+                                <div class="news-img">
+                                    <img src="img/news02.jpg" alt="">
+                                </div>
+                                <div class="news_content">
+
+                                    <div class="news_title">【新品上市 | 壽喜燒鍋】
+                                        有時候就是想吃壽喜燒</div>
+
+                                    <div class="news_date">
+                                        2023/01/17 </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="news_swiper-slide swiper-slide">
+                            <a class="news_list" href="news.html">
+                                <div class="news-img">
+                                    <img src="img/news03.jpg" alt="">
+                                </div>
+                                <div class="news_content">
+
+                                    <div class="news_title">【新品上市 | 麻油菇菇鍋】
+                                        冬令進補怎能少了麻油</div>
+
+                                    <div class="news_date">
+                                        2023/01/17 </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="news_swiper-slide swiper-slide">
+                            <a class="news_list" href="news.html">
+                                <div class="news-img">
+                                    <img src="img/news04.jpg" alt="">
+                                </div>
+                                <div class="news_content">
+
+                                    <div class="news_title">【特別活動 | 2023兔飛猛進】
+                                        新春期間來店滿額贈</div>
+
+                                    <div class="news_date">
+                                        2023/01/17 </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="news_swiper-slide swiper-slide">
+                            <a class="news_list" href="news.html">
+                                <div class="news-img">
+                                    <img src="img/news05.jpg" alt="">
+                                </div>
+                                <div class="news_content">
+
+                                    <div class="news_title">【新品項目 | 即食湯包】
+                                        即使在家隨時都有火鍋stand by</div>
+
+                                    <div class="news_date">
+                                        2023/01/17 </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="news_swiper-slide swiper-slide">
+                            <a class="news_list" href="news.html">
+                                <div class="news-img">
+                                    <img src="img/news06.jpg" alt="">
+                                </div>
+                                <div class="news_content">
+
+                                    <div class="news_title">【特別活動 | 2022萬聖節】
+                                        穿著dress code來店有禮</div>
+
+                                    <div class="news_date">
+                                        2023/01/17 </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="animation_wrapper">
+            <div class="intro_wrap">
+                <!-- 滾動視差2 -->
+
+                <div class="intro" id="parallax-1">
+                    <div class="animation_wrapper2"></div>
+                    <div class="intro_title">
+                        <h2>飯咖再難揪、工作再忙<br>
+                            也要吃到鍋物的堅持</h2>
+                    </div>
+                    <div class="intro_content">一個人也要開火鍋趴<br>
+                        即享鍋是幫您煮好可即時食用的鍋物<br>
+                        省去等待的時間<br>
+                        但一樣可享受火鍋的美味<br>
+                        再也不用因為時間不夠而妥協</div>
+
+                </div>
+        </section>
+
+        <section id="parallax-2">
+            <!-- <div class="keylayer01" id="parallax-0"></div> -->
+            <div class="intro2">
+
+                <div class="keylayer02">
+                    <div class="swiper textSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-textopa">
+                                <div class="text_animation" id="text01">輕饗鍋物超簡單!</div>
+                            </div>
+                            <div class="swiper-slide swiper-textopa">
+                                <div class="text_animation" id="text02">用料實在超健康!</div>
+                            </div>
+                            <div class="swiper-slide swiper-textopa">
+                                <div class="text_animation" id="text03">美味用心超好吃!</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img src="img/pot01.png" alt="">
+                </div>
+            </div>
+
+
+            </div>
+
+        </section>
+
+        <!-- 推薦鍋物 -->
+        <section class="newpot">
+
+            <div class="index-newpot">
+
+                <div class="newpot_swiper newsSwiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="newpot_swiper-slide swiper-slide">
+                            <div class="newpot_list">
+                                <div class="newpot-img">
+                                    <a href="choice.html#menulink"><img src="img/recommand01.jpg" alt=""></a>
+                                </div>
+                                <div class="newpot_content">
+
+                                    <h2>極濃登場<br>
+                                        田園牛奶鍋</h2>
+                                    <p>鄉村野菜X濃郁奶香<br>
+                                        清脆蔬菜肉質鮮甜<br>
+                                        滿滿一鍋暖心暖胃超滿足<br>
+                                    </p>
+                                </div>
+                                <div class="newpot_block">
+                                    推薦鍋物</div>
+                            </div>
+                        </div>
+
+
+                        <div class="newpot_swiper-slide swiper-slide">
+                            <div class="newpot_list">
+                                <div class="newpot-img">
+                                    <a href="choice.html#menulink"><img src="img/recommand02.jpg" alt=""></a>
+                                </div>
+                                <div class="newpot_content">
+
+                                    <h2>獨特口味<br>
+                                        南洋鮮蝦鍋</h2>
+                                    <p>濃郁叻沙搭配鮮甜大白蝦<br>
+                                        碰撞出新火花<br>
+                                        你一定要來試試
+                                    </p>
+                                </div>
+                                <div class="newpot_block">
+                                    推薦鍋物</div>
+                            </div>
+                        </div>
+
+                        <div class="newpot_swiper-slide swiper-slide">
+                            <div class="newpot_list">
+                                <div class="newpot-img">
+                                    <img src="img/recommand03.jpg" alt="">
+                                </div>
+                                <div class="newpot_content">
+
+                                    <h2>鹹香麻辣<br>
+                                        麻辣豬肉鍋</h2>
+                                    <p>使用花椒粒、蔥段、薑片，辣椒粉、紫草、桂皮、八角、大小茴香<br>等多項香料熬製而成的麻辣鍋底，<br>搭配豬肉片鹹香麻辣，<br>忍不住一口接一口<br>
+                                    </p>
+                                </div>
+                                <div class="newpot_block">
+                                    推薦鍋物</div>
+                            </div>
+                        </div>
+
+
+                        <div class="newpot_swiper-slide swiper-slide">
+                            <div class="newpot_list">
+                                <div class="newpot-img">
+                                    <a href="choice.html#menulink"><img src="img/recommand04.jpg" alt=""></a>
+                                </div>
+                                <div class="newpot_content">
+
+                                    <h2>冬令進補<br>
+                                        養生藥膳鍋</h2>
+                                    <p>本店特製十多種中藥熬製<br>湯頭甜美不躁熱，中藥清香去油解膩<br>冷冷的冬天來上一鍋溫暖無比
+                                    </p>
+                                </div>
+                                <div class="newpot_block">
+                                    推薦鍋物</div>
+                            </div>
+                        </div>
+
+                        <div class="newpot_swiper-slide swiper-slide">
+                            <div class="newpot_list">
+                                <div class="newpot-img">
+                                    <a href="choice.html#menulink"><img src="img/recommand05.jpg" alt=""></a>
+                                </div>
+                                <div class="newpot_content">
+
+                                    <h2>酸辣濃郁<br>
+                                        韓式泡菜鍋</h2>
+                                    <p>用正宗韓式泡菜燉煮<br>配上豆腐與豬肉片<br>酸酸辣辣吃了好開胃
+                                    </p>
+                                </div>
+                                <div class="newpot_block">
+                                    推薦鍋物</div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="swiper-pagination newpot_pagination"></div>
+                </div>
+                <div class="btn btn_center btn_white"><a href="choice.html#menulink">詳細菜單<img
+                            src="img/angle-right-solid-white.svg" alt="" class="angle-right"></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="recommend">
+            <div class="recommend-store">
+                <div class="recommend_title">
+                    <h1>阮這鍋<br>料好味實在<br>快來找找<br></h1>
+
+                    <div class="btn"><a href="store.html">查詢門市<img src="img/angle-right-solid.svg" alt=""
+                                class="angle-right"></a></div>
+                </div>
+
+                <img src="img/index_pot01.png" alt="南洋鮮蝦鍋">
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer_containter">
+            <div class="footer_logo"><a href="index.html"><img src="img/logo-white.svg" alt="LOGO"></a></div>
+            <ul class="footer_social">
+                <li><a href="#"><img src="img/social_fb.svg" alt="facebook連結"></a></li>
+                <li><a href="#"><img src="img/social_ig.svg" alt="instagram連結"></a></li>
+                <li><a href="#"><img src="img/social_line.svg" alt="LINE官方帳號連結"></a></li>
+            </ul>
+
+            <ul class="footer_sitemap">
+                <li><a href="news.html">最新消息</a></li>
+                <li><a href="about.html">關於我們</a></li>
+                <li><a href="choice.html">嚴選食材</a></li>
+                <li><a href="store.html">門市資訊</a></li>
+                <li><a href="faq.html">常見問題</a></li>
+            </ul>
+
+            <div class="footer_contact">我們重視您的意見，如有疑問請聯絡我們 <a href="tel:02-00000000">02-0000-0000</a>　<a
+                    href="mailto:">service@service.com.tw</a></div>
+            <div class="footer_copyright">本網站為緯育TibaMe前端工程師班第82期學員專題作品,本平台僅供學習、展示之用。
+                <a href="https://docs.google.com/document/d/1RpSZirHG1udNNeUzWH4Kmhel9mV7SHwQW_19rauXo0s/edit?usp=sharing"
+                    target="_blank">參考資源連結</a>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="js/index.js"></script>
+    <script src="js/scroll.js"></script>
+
+    <!-- 開場動畫 -->
+    <script>
+        setTimeout(() => {
+            const box = document.getElementById('box');
+            box.style.display = 'none';
+
+        }, 3000); 
+    </script>
+    <!-- 滾動 -->
+    <script>
+        let ani = document.getElementsByClassName("animation_wrapper")
+
+        window.addEventListener('scroll', function () {
+
+            document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+        }, false); 
+    </script>
+
+
+
 </body>
+
 </html>

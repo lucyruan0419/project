@@ -1,0 +1,127 @@
+.wrapper_bg {
+    width: 100%;
+    min-width: 1200px;
+    position: relative;
+    height: 605px;
+}
+
+.about {
+    width: 1200px;
+    margin: 180px auto;
+    display: flex;
+    position: relative;
+
+}
+
+
+.about_title {
+    width: 400px;
+    padding: 30px 5px;
+}
+
+.right {
+    position: absolute;
+    left: auto;
+    right: 0;
+    top: 0;
+    text-align: right;
+}
+
+.about_title > h1 {
+    background-image: linear-gradient(180deg, transparent 60%, #FFCC33 0);
+    display: inline;
+    padding: 0 10px;
+}
+
+.about_title > h2 {
+    margin-top: 15px;
+    padding: 0 10px;
+    line-height: 1.8;
+}
+.about_title > p {
+    margin-top: 15px;
+    padding: 0 10px;
+    line-height: 1.8;
+}
+
+.about_img1 {
+    background-image: url("../img/about01.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    width: calc(100% - 420px);
+    height: 600px;
+    position: absolute;
+    left: auto;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+.about_img2 {
+    background-image: url("../img/about02.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    width: calc(400px + 35%);
+    height: 605px;
+    position: absolute;
+    right: auto;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+.about_img3 {
+    background-image: url("../img/about03.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    width: calc(100% - 420px);
+    height: 600px;
+    position: absolute;
+
+    right: 0;
+    top: 0;
+    overflow: hidden;
+}
+/* -----------最下方區塊----------- */
+.recommend {
+    position: relative;
+}
+
+.recommend-choice {
+    width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 80px;
+
+}
+
+
+.recommend-choice::after {
+    content: '';
+    background-image:
+        url("../img/lefthand.png");
+
+    background-repeat: no-repeat;
+    background-position:
+       left bottom;
+    background-size:
+        auto 720px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -300px;
+    width: 100%;
+    min-width: 1200px;
+    height: 850px;
+    z-index: 1;
+}
+
+.recommend-choice > img {
+    width: 500px;
+
+}
+
+.recommend-choice > .recommend_title{
+    padding-top: 100px;
+}
