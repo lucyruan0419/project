@@ -284,7 +284,7 @@
     position: absolute;
     content: '';
     top: -130px;
-    right: -150px;
+    right: -120px;
     width: 360px;
     height: 360px;
     background-image: url("../img/indexempty_circle.svg");
@@ -329,8 +329,8 @@
 }
 
 .news_swiper {
-    width: 320px;
-    height: 520px;
+    width: 335px;
+    height: 550px;
     margin-top: 25px;
 
 
@@ -338,7 +338,7 @@
 
 .news_swiper-slide {
     border-radius: 30px;
-    height: 430px;
+    height: 450px;
     text-align: center;
     background-color: #fff;
     padding: 20px;
@@ -400,7 +400,7 @@
     background-image:
         url("../img/wave.svg");
     width: 100vh;
-    height: 410px;
+    height: 420px;
     background-repeat: repeat-y;
     background-size: 120%;
     background-position:
@@ -432,7 +432,7 @@
     background-image:
         url("../img/wave.svg");
     width: 100vh;
-    height: 395px;
+    height: 405px;
     background-repeat: repeat-y;
     background-size: 115%;
     background-position:
@@ -546,7 +546,7 @@
     content: '';
     background-image: url("../img/3circle.svg");
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center 50px;
     background-size: 0%;
 
     position: absolute;
@@ -558,7 +558,7 @@
     height: 1150px;
     z-index: -1;
     background-color: #FF8754;
-    animation: body 1s linear;
+    animation: body 1s linear 2s;
 
     /* Pause the animation */
     animation-play-state: paused;
@@ -571,7 +571,7 @@
 
 @keyframes body {
     to {
-        background-size: 100%;
+        background-size: 90%;
     }
 
 }
@@ -611,8 +611,6 @@
     position: relative;
     margin-top: 25px;
 }
-
-.index-newpot::after {}
 
 .newpot_swiper {
     width: 800px;

@@ -21,7 +21,7 @@ var swiper = new Swiper(".newsSwiper", {
     speed: 4500,
     loop: true,
 
-    spaceBetween: 50,
+    spaceBetween: 30,
 
     pagination: {
         el: ".swiper-pagination",
