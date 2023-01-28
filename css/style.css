@@ -141,7 +141,13 @@ header {
     background-color: #D1512D;
     z-index: -2;
     border-radius: 250px;
-    animation: ttb 0s linear forwards;
+    animation: show1 .3s linear forwards;
+    transform: scale(.1);
+    opacity: 0;
+}
+@keyframes show1{
+    0%{transform: scale(.1);opacity: 0;}
+    100%{transform: scale(1);opacity: 1;}
 }
 
 
@@ -207,7 +213,7 @@ header {
     width: 100%;
     min-width: 1000px;
     height: 1000px;
-    animation: bg1 12s linear infinite;
+    animation: bg1 10s linear infinite;
 }
 
 @keyframes bg1 {
