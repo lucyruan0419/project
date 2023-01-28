@@ -681,7 +681,7 @@
 
 .recommend-store {
     width: 1000px;
-    margin: 50px auto 0;
+    margin: 80px auto 50px;
     display: flex;
     justify-content: space-between;
     padding-left: 80px;
@@ -697,7 +697,7 @@
 
     background-repeat: no-repeat;
     background-position:
-        650px top,
+        650px -50px,
         left center,
         right bottom;
     background-size:
@@ -707,7 +707,7 @@
     position: absolute;
     right: 0;
     left: 0;
-    bottom: -300px;
+    bottom: -350px;
     width: 100%;
     min-width: 1200px;
     height: 1040px;
