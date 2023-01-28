@@ -283,7 +283,7 @@
 .news::before {
     position: absolute;
     content: '';
-    top: -150px;
+    top: -130px;
     right: -150px;
     width: 360px;
     height: 360px;
