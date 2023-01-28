@@ -251,20 +251,61 @@
     min-width: 1200px;
     padding: 0 40px;
     background-image: url("../img/45degreee_fabric.webp");
+    overflow-x: clip;
+
 }
 
 /* NEWS color-block */
 .index-news-left {
     position: absolute;
     top: -50px;
-    width: 35vw;
-    min-width: 450px;
+    width: 34vw;
+    min-width: 420px;
     height: 500px;
     background-color: #FF8754;
     z-index: 5;
     border-radius: 0 30px 30px 0;
     justify-self: start;
+    animation: delay 1s linear forwards 2.5s;
+    left: -130px;
+}
 
+@keyframes delay {
+    0% {
+        left: -130px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+.news::before {
+    position: absolute;
+    content: '';
+    top: -150px;
+    right: -150px;
+    width: 360px;
+    height: 360px;
+    background-image: url("../img/indexempty_circle.svg");
+    background-size: contain;
+    z-index: 4;
+
+
+    border-radius: 0 30px 30px 0;
+
+}
+
+.index-news-leftdown {
+    position: absolute;
+    bottom: -200px;
+    left: -100px;
+    width: 300px;
+    height: 300px;
+    background-image: url("../img/indexempty_circle.svg");
+    background-size: contain;
+    z-index: 4;
+    border-radius: 0 30px 30px 0;
 }
 
 .index-news .atext {
@@ -368,15 +409,15 @@
     animation: wave .5s linear;
     transform: translate(-2000px, 0);
     z-index: -5;
-    
 
-        /* Pause the animation */
-        animation-play-state: paused;
-        /* Bind the animation to scroll */
-        animation-delay: calc(var(--scroll) * -1s);
-        /* These last 2 properites clean up overshoot weirdness */
-        animation-iteration-count: 1;
-        animation-fill-mode: both;
+
+    /* Pause the animation */
+    animation-play-state: paused;
+    /* Bind the animation to scroll */
+    animation-delay: calc(var(--scroll) * -1s);
+    /* These last 2 properites clean up overshoot weirdness */
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
 }
 
 @keyframes wave {
@@ -385,6 +426,7 @@
     }
 
 }
+
 .animation_wrapper2::after {
     content: '';
     background-image:
@@ -400,13 +442,13 @@
     transform: translate(-300px, 0);
     z-index: -5;
 
-        /* Pause the animation */
-        animation-play-state: paused;
-        /* Bind the animation to scroll */
-        animation-delay: calc(var(--scroll) * -1s);
-        /* These last 2 properites clean up overshoot weirdness */
-        animation-iteration-count: 1;
-        animation-fill-mode: both;
+    /* Pause the animation */
+    animation-play-state: paused;
+    /* Bind the animation to scroll */
+    animation-delay: calc(var(--scroll) * -1s);
+    /* These last 2 properites clean up overshoot weirdness */
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
 }
 
 
@@ -518,13 +560,13 @@
     background-color: #FF8754;
     animation: body 1s linear;
 
-        /* Pause the animation */
-        animation-play-state: paused;
-        /* Bind the animation to scroll */
-        animation-delay: calc(var(--scroll) * -1s);
-        /* These last 2 properites clean up overshoot weirdness */
-        animation-iteration-count: 1;
-        animation-fill-mode: both;
+    /* Pause the animation */
+    animation-play-state: paused;
+    /* Bind the animation to scroll */
+    animation-delay: calc(var(--scroll) * -1s);
+    /* These last 2 properites clean up overshoot weirdness */
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
 }
 
 @keyframes body {
@@ -570,9 +612,7 @@
     margin-top: 25px;
 }
 
-.index-newpot::after{
-   
-}
+.index-newpot::after {}
 
 .newpot_swiper {
     width: 800px;
@@ -580,7 +620,7 @@
     margin-top: 0px;
 }
 
-.newpot_pagination{
+.newpot_pagination {
     margin-bottom: 130px;
 }
 

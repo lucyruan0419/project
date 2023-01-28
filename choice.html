@@ -140,12 +140,11 @@
                 <div class="set">
                     <div class="set_left">
                         <ul class="set_menu">
-                            <li onclick="left01()" class="btn_choice"><a href="#" onClick="return false;">鍋物底蘊</a></li>
-                            <li onclick="left02()" class="btn_choice"><a href="#" onClick="return false;">嚴選肉品</a></li>
-                            <li onclick="left03()" class="btn_choice"><a href="#" onClick="return false;">新鮮時蔬</a></li>
-                            <li onclick="left04()" class="btn_choice"><a href="#" onClick="return false;">特選附餐</a></li>
-                            <li onclick="left05()" class="btn_choice"><a href="#" onClick="return false;">涮嘴飲品
-                                </a></li>
+                            <li onclick="left01()"><a href="#" onClick="return false;" class="btn_choice">鍋物底蘊</a></li>
+                            <li onclick="left02()"><a href="#" onClick="return false;" class="btn_choice">嚴選肉品</a></li>
+                            <li onclick="left03()"><a href="#" onClick="return false;" class="btn_choice">新鮮時蔬</a></li>
+                            <li onclick="left04()"><a href="#" onClick="return false;" class="btn_choice">特選附餐</a></li>
+                            <li onclick="left05()"><a href="#" onClick="return false;" class="btn_choice">涮嘴飲品</a></li>
                         </ul>
                     </div>
                     <!-- 選湯底 -->
@@ -442,44 +441,67 @@
         </section>
     </main>
 
- <!-- footer -->
- <footer>
-    <div class="footer_containter">
-        <div class="footer_logo"><a href="index.html"><img src="img/logo-white.svg" alt="LOGO"></a></div>
-        <ul class="footer_social">
-            <li><a href="#"><img src="img/social_fb.svg" alt="facebook連結"></a></li>
-            <li><a href="#"><img src="img/social_ig.svg" alt="instagram連結"></a></li>
-            <li><a href="#"><img src="img/social_line.svg" alt="LINE官方帳號連結"></a></li>
-        </ul>
+    <!-- footer -->
+    <footer>
+        <div class="footer_containter">
+            <div class="footer_logo"><a href="index.html"><img src="img/logo-white.svg" alt="LOGO"></a></div>
+            <ul class="footer_social">
+                <li><a href="#"><img src="img/social_fb.svg" alt="facebook連結"></a></li>
+                <li><a href="#"><img src="img/social_ig.svg" alt="instagram連結"></a></li>
+                <li><a href="#"><img src="img/social_line.svg" alt="LINE官方帳號連結"></a></li>
+            </ul>
 
-        <ul class="footer_sitemap">
-            <li><a href="news.html">最新消息</a></li>
-            <li><a href="about.html">關於我們</a></li>
-            <li><a href="choice.html">嚴選食材</a></li>
-            <li><a href="store.html">門市資訊</a></li>
-            <li><a href="faq.html">常見問題</a></li>
-        </ul>
+            <ul class="footer_sitemap">
+                <li><a href="news.html">最新消息</a></li>
+                <li><a href="about.html">關於我們</a></li>
+                <li><a href="choice.html">嚴選食材</a></li>
+                <li><a href="store.html">門市資訊</a></li>
+                <li><a href="faq.html">常見問題</a></li>
+            </ul>
 
-        <div class="footer_contact">我們重視您的意見，如有疑問請聯絡我們 <a href="tel:02-00000000">02-0000-0000</a>　<a
-                href="mailto:">service@service.com.tw</a></div>
-        <div class="footer_copyright">本網站為緯育TibaMe前端工程師班第82期學員專題作品,本平台僅供學習、展示之用。
-            <a href="https://docs.google.com/document/d/1RpSZirHG1udNNeUzWH4Kmhel9mV7SHwQW_19rauXo0s/edit?usp=sharing" target="_blank">參考資源連結</a>
+            <div class="footer_contact">我們重視您的意見，如有疑問請聯絡我們 <a href="tel:02-00000000">02-0000-0000</a>　<a
+                    href="mailto:">service@service.com.tw</a></div>
+            <div class="footer_copyright">本網站為緯育TibaMe前端工程師班第82期學員專題作品,本平台僅供學習、展示之用。
+                <a href="https://docs.google.com/document/d/1RpSZirHG1udNNeUzWH4Kmhel9mV7SHwQW_19rauXo0s/edit?usp=sharing"
+                    target="_blank">參考資源連結</a>
+            </div>
         </div>
-    </div>
 
-</footer>
+    </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-    <script>
-        let my_block = document.getElementsByClassName("btn_choice");
 
-        my_block.addEventListener("click", function () {
-            my_block.style.remove("btn_choice");
-            my_block.style.add("btn_choice_current");
+<!--     <script>
+        let button = document.getElementById('btn_choice');
+        let containers = document.getElementsByClassName('set_menu');
+
+        function changeButtonText() {
+            if (button.innerHTML === "Add")
+                button.innerHTML = "Remove";
+            else
+                button.innerHTML = "Add";
+        }
+
+        button.addEventListener('click', function () {
+            for (let index = 0; index < containers.length; ++index)
+                containers[index].classList.toggle('btn_choice_current');
+            changeButtonText();
         });
+
+    </script> -->
+      <script>
+        var my_block = document.getElementsByClassName("btn_choice");
+        for (let i = 0; i < my_block.length; i++) {
+            my_block[i].addEventListener("click", function onClick(e) {
+            //e.stopPropagation();
+            my_block[i].classList.add("btn_choice_current");
+        })
+
+    };
+
     </script>
     <script>
 
