@@ -62,7 +62,8 @@
     background-image: url("../img/about02.jpg");
     background-repeat: no-repeat;
     background-position: left top;
-    width: calc(400px + 35%);
+    width: calc(100% - 440px);
+    max-width: 1100px;
     height: 605px;
     position: absolute;
     right: auto;
