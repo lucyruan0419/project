@@ -94,9 +94,7 @@
     display: flex;
     justify-content: space-between;
     padding-left: 80px;
-
 }
-
 
 .recommend-choice::after {
     content: '';
@@ -116,11 +114,11 @@
     min-width: 1200px;
     height: 850px;
     z-index: 1;
+    pointer-events: none;
 }
 
 .recommend-choice > img {
     width: 500px;
-
 }
 
 .recommend-choice > .recommend_title{
