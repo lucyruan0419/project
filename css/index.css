@@ -400,8 +400,8 @@
     background-image:
         url("../img/wave.svg");
     width: 100vh;
-    height: 420px;
-    background-repeat: repeat-y;
+    height: 435px;
+    background-repeat: no-repeat;
     background-size: 120%;
     background-position:
         left top;
@@ -432,8 +432,8 @@
     background-image:
         url("../img/wave.svg");
     width: 100vh;
-    height: 405px;
-    background-repeat: repeat-y;
+    height: 420px;
+    background-repeat: no-repeat;
     background-size: 115%;
     background-position:
         left top;
@@ -660,7 +660,7 @@
 
 .newpot_block {
     position: absolute;
-    background-color: #85250b;
+    background-color: #a12300;
     color: #fff;
     font-weight: bold;
     top: 0;
