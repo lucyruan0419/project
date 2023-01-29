@@ -8,6 +8,8 @@
     適合忙碌的上班族，短暫的午休也可以吃到現煮鍋物，即使外帶也不影響口感">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>阮這鍋 | 即享鍋</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="bookmark" href="favicon.ico" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/choice.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -140,7 +142,7 @@
                 <div class="set">
                     <div class="set_left">
                         <ul class="set_menu">
-                            <li onclick="left01()"><a href="#" onClick="return false;" class="btn_choice">鍋物底蘊</a></li>
+                            <li onclick="left01()"><a href="#" onClick="return false;" class="btn_choice">鍋物湯底</a></li>
                             <li onclick="left02()"><a href="#" onClick="return false;" class="btn_choice">嚴選肉品</a></li>
                             <li onclick="left03()"><a href="#" onClick="return false;" class="btn_choice">新鮮時蔬</a></li>
                             <li onclick="left04()"><a href="#" onClick="return false;" class="btn_choice">特選附餐</a></li>
@@ -492,17 +494,21 @@
         });
 
     </script> -->
-      <script>
+
+
+<!--       <script>
         var my_block = document.getElementsByClassName("btn_choice");
         for (let i = 0; i < my_block.length; i++) {
             my_block[i].addEventListener("click", function onClick(e) {
             //e.stopPropagation();
-            my_block[i].classList.add("btn_choice_current");
+            my_block[i].style.backgroundColor = "#D3442D";
         })
 
     };
 
-    </script>
+    </script> -->
+
+
     <script>
 
 
