@@ -241,9 +241,7 @@
             $('.quetion').click(function (e) {
                 e.preventDefault();
                 $(this).parent().find('.answer').slideToggle("fast");
-                // 點擊到這個元素回到父層再到父層內找子元素 .dropdown-open進行 slideToggle 這動作
                 $(this).parent().siblings().find('.answer').slideUp();
-                // 將其他打開的選單收起來
             });
         });
 
