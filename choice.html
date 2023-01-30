@@ -476,38 +476,18 @@
         AOS.init();
     </script>
 
-<!--     <script>
-        let button = document.getElementById('btn_choice');
-        let containers = document.getElementsByClassName('set_menu');
-
-        function changeButtonText() {
-            if (button.innerHTML === "Add")
-                button.innerHTML = "Remove";
-            else
-                button.innerHTML = "Add";
-        }
-
-        button.addEventListener('click', function () {
-            for (let index = 0; index < containers.length; ++index)
-                containers[index].classList.toggle('btn_choice_current');
-            changeButtonText();
-        });
-
-    </script> -->
-
-
-      <script>
+    <script>
         var my_block = document.getElementsByClassName("btn_choice");
         for (let i = 0; i < my_block.length; i++) {
             my_block[i].addEventListener("click", function onClick(e) {
-            //e.stopPropagation();
-            for (let i = 0; i < my_block.length; i++) {
-                my_block[i].style.backgroundColor = "#999";
-            }
-            this.style.backgroundColor = "#D3442D";
-        })
+                //e.stopPropagation();
+                for (let i = 0; i < my_block.length; i++) {
+                    my_block[i].style.backgroundColor = "#999";
+                }
+                this.style.backgroundColor = "#D3442D";
+            })
 
-    };
+        };
 
     </script>
 
