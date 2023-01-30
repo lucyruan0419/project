@@ -45,12 +45,12 @@
     margin: 7px 0;
     display: block;
     line-height: 25px;
-    color: #D1512D;
+    color: #D3442D;
     float: right;
 }
 
 .read:hover {
-    border-bottom: 2px solid #D1512D;
+    border-bottom: 2px solid #D3442D;
 }
 
 .list li>.read img {
@@ -100,7 +100,7 @@
     width: 120px;
     height: 40px;
     text-align: center;
-    border: 1px solid #D1512D;
+    border: 1px solid #D3442D;
     border-radius: 30px;
     margin: 99px 8px 0;
     background-color: #fff;
@@ -110,13 +110,13 @@
 .catalog a {
     display: block;
     line-height: 40px;
-    color: #D1512D;
+    color: #D3442D;
 }
 
 .catalog a:hover {
     display: block;
     line-height: 40px;
-    background-color: #D1512D;
+    background-color: #D3442D;
     color: #fff;
     border-radius: 30px;
 }
@@ -156,7 +156,7 @@
 
 .para_subtitle,
 .para_notice {
-    background-color: #D1512D;
+    background-color: #D3442D;
     color: #fff;
     margin: 40px 0 20px;
     height: 35px;
