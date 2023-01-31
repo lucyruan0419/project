@@ -420,6 +420,11 @@ header {
     justify-content: center;
 
 }
+/* 增加按鈕效果 */
+.btn:hover{
+    background-color: #FFBC3A;
+    border: 2px solid #FFBC3A;
+}
 
 .angle-right {
     margin-left: 20px;
