@@ -79,6 +79,9 @@
 
 .page_number a {
     color: #fff;
+    display: block;
+    width: 20px;
+    height: 20px;
 }
 
 .current_page {
@@ -169,4 +172,8 @@
 .para{
     line-height: 2;
     width: 600px;
+}
+
+a.inline{
+    display: inline-block;
 }

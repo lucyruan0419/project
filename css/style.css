@@ -51,7 +51,7 @@ p{
 
 /* ----------Header---------- */
 header {
-    position: fixed;
+    position: sticky;
     height: 90px;
     width: 100%;
     min-width: 1200px;
