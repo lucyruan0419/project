@@ -364,6 +364,16 @@
 
 }
 
+.news-img img:hover{
+    transform: scale(1);
+    animation: imgh .5s forwards;
+}
+
+@keyframes imgh{
+    0%{transform: scale(1);}
+    100%{transform: scale(1.06);}
+}
+
 .news_title {
     font-size: 1rem;
     color: black;

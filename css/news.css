@@ -16,10 +16,31 @@
     margin: 0 10px 20px 10px;
 }
 
-.list li .news_thumb {
+.list li .news_thumb img {
     width: 100%;
+    vertical-align: middle;
+}
+
+.list li .news_thumb {
+    overflow: hidden;
     border-radius: 20px;
     margin-bottom: 5px;
+
+}
+
+.list li .news_thumb img:hover {
+    transform: scale(1);
+    animation: imgh .5s forwards;
+}
+
+@keyframes imgh {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.06);
+    }
 }
 
 .list li .news_date {
@@ -169,11 +190,11 @@
     align-items: center;
 }
 
-.para{
+.para {
     line-height: 2;
     width: 600px;
 }
 
-a.inline{
+a.inline {
     display: inline-block;
 }
