@@ -12,8 +12,10 @@
     <link rel="bookmark" href="favicon.ico" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/rwd_style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    
 </head>
 
 <body>
@@ -29,6 +31,11 @@
                 <li><a href="faq.html">常見問題</a></li>
             </ul>
         </nav>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
         <ul class="header_social">
             <li><a href="#"><img src="img/social_fb.svg" alt="facebook連結"></a></li>
             <li><a href="#"><img src="img/social_ig.svg" alt="instagram連結"></a></li>
@@ -150,27 +157,7 @@
     <script>
         AOS.init();
     </script>
-    <script>
-        var dropdown = document.getElementsByClassName("quetion");
-        var i;
-
-        for (i = 0; i < dropdown.length; i++) {
-            dropdown[i].addEventListener("click", function () {
-                var dropdownContent = document.getElementsByClassName("answer")
-                for (j = 0; j < dropdownContent.length; j++) {
-                    dropdownContent[j].style.display = "none"
-                }
-
-                this.classList.toggle("active");
-                var dropdownContent = this.nextElementSibling;
-                if (dropdownContent.style.display === "block") {
-                    dropdownContent.style.display = "none";
-                } else {
-                    dropdownContent.style.display = "block";
-                }
-            });
-        }
-    </script>
+    <script src="js/rwd.js"></script>
 
 </body>
 
