@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="css/faq.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
-
+    <link rel="stylesheet" href="css/rwd_style.css">
+    <link rel="stylesheet" href="css/rwd_faq.css">
 </head>
 
 <body>
@@ -30,6 +31,12 @@
                 <li><a class="current" href="#">常見問題</a></li>
             </ul>
         </nav>
+        
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
         <ul class="header_social">
             <li><a href="#"><img src="img/social_fb.svg" alt="facebook連結"></a></li>
             <li><a href="#"><img src="img/social_ig.svg" alt="instagram連結"></a></li>
@@ -206,7 +213,8 @@
 
     </footer>
 
-
+    <!-- NAV -->
+    <script src="js/rwd.js"></script>
 
     <!-- JS版本-->
     <!--     <script>
@@ -228,7 +236,7 @@
                     dropdownContent.style.display = "block";
                 }
             });
-        }
+        }<i class="fa-solid fa-minus"></i>
 
     </script>  -->
 
@@ -239,8 +247,12 @@
             // 收合選單
             $('.quetion').click(function (e) {
                 e.preventDefault();
+                //只要i有減號就強制移除再加入+號
+                $("i.fa-minus").removeClass("fa-minus").addClass('fa-plus');
                 $(this).parent().find('.answer').slideToggle("fast");
                 $(this).parent().siblings().find('.answer').slideUp();
+
+                $("i", this).toggleClass("fa-solid fa-plus fa-solid fa-minus");
             });
         });
 

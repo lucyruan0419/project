@@ -1,0 +1,42 @@
+  /* FAQ */
+  @media screen and (max-width: 428px) {
+  
+
+  .wrapper_bg {
+    min-width: auto;
+    height: auto;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 25px;
+  }
+  .list_top{
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50px;
+  }
+
+  .list li{
+    width: 100%;
+  }
+
+  .block_gray{
+    width: 100%;
+  }
+
+  .list_bottom > a > img{
+    width: 100%;
+  }
+
+  .quetion > a{
+    width: 100%;
+  }
+
+  .quetion > h4{
+    font-size: 20px;
+  }
+
+  .list_top h3{
+    margin: auto;
+  }
+}

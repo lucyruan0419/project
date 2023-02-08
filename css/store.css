@@ -85,7 +85,7 @@
     display: flex;
     border-radius: 150px;
     align-items: flex-end;
-    justify-content: center;
+    /* justify-content: center; */
     box-shadow: 3px 3px 3px rgb(183, 183, 183);
 
 }

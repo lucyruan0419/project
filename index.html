@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
 
+    <link rel="stylesheet" href="css/rwd_style.css">
+
 </head>
 
 <body>
@@ -31,13 +33,11 @@
 
     </div>
     <!-- header -->
-    <header class="header01">
+    <header>
         <div class="header_logo"><a href="#"><img src="img/logo-white.svg" alt=""></a></div>
-        <nav class="menu-list">
-            <input type="checkbox" id="menu">
-            <label for="menu" class="line">
-                <div class="menu"></div>
-            </label>
+        
+        <nav>
+
             <ul class="navi">
                 <li><a href="news.html">最新消息</a></li>
                 <li><a href="about.html">關於我們</a></li>
@@ -45,7 +45,13 @@
                 <li><a href="store.html">門市資訊</a></li>
                 <li><a href="faq.html">常見問題</a></li>
             </ul>
+
         </nav>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
         <ul class="header_social">
             <li><a href="#"><img src="img/social_fb.svg" alt="facebook連結"></a></li>
             <li><a href="#"><img src="img/social_ig.svg" alt="instagram連結"></a></li>
@@ -391,6 +397,8 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
     <script src="js/index.js"></script>
+    <!-- NAV -->
+    <script src="js/rwd.js"></script>
 
     <!-- 開場動畫 -->
     <script>
@@ -409,7 +417,6 @@
             document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
         }, false); 
     </script>
-
 
 
 </body>

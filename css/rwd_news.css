@@ -1,0 +1,17 @@
+  /* NEWS分頁 */
+  @media screen and (max-width: 428px) {
+  .wrapper_bg {
+    min-width: auto;
+    height: auto;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .content {
+    width: 90%;
+  }
+
+  .content>img {
+    width: 100%;
+  }
+  }

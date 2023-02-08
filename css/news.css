@@ -28,6 +28,16 @@
 
 }
 
+.list li > a > h5{
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    /*行數*/
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
 .list li .news_thumb img:hover {
     transform: scale(1);
     animation: imgh .5s forwards;
