@@ -1,0 +1,52 @@
+
+  /* 門市資訊 */
+  @media screen and (max-width: 428px) {
+  .list_top{
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    border-radius:50px;
+  }
+
+  .list li{
+    width: 100%;
+    box-sizing: border-box;
+    margin:auto;
+    margin-bottom: 30px;
+    padding: 25px;
+    position: relative;
+  }
+
+  .list li .right{
+    width: 80%;
+    float: right;
+  }
+  .list li .link_button{
+    width: 100%;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+  }
+
+  .link_button a{
+    margin: 10px 2px;
+  }
+
+  a.mobilenone{
+    display: none;
+    border: 1px solid black;
+  }
+
+  a.mobilecorner{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    color: #fff;
+    background-color: #D3442D;
+    font-size: 20px;
+    border: 2px solid #D3442D;
+    border-radius:30px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+  }
+  }
