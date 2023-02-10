@@ -283,10 +283,15 @@
     letter-spacing: 3px;
     padding-left: 10px;
     margin: 0 0 25px;
+    cursor: pointer;
 }
 
-.set_menu>li>a:hover {
-    background-color: #D1512D;
+.btn_choice.active{
+    background-color: #D3442D;
+}
+
+.set_menu>li:hover {
+    background-color: #D3442D;
 }
 
 

@@ -150,11 +150,11 @@
                 <div class="set">
                     <div class="set_left">
                         <ul class="set_menu">
-                            <li onclick="left01()"><a href="#" onClick="return false;" class="btn_choice">鍋物湯底</a></li>
-                            <li onclick="left02()"><a href="#" onClick="return false;" class="btn_choice">嚴選肉品</a></li>
-                            <li onclick="left03()"><a href="#" onClick="return false;" class="btn_choice">新鮮時蔬</a></li>
-                            <li onclick="left04()"><a href="#" onClick="return false;" class="btn_choice">特選附餐</a></li>
-                            <li onclick="left05()"><a href="#" onClick="return false;" class="btn_choice">涮嘴飲品</a></li>
+                            <li onclick="openCity(event, 'right01')" class="btn_choice">鍋物湯底</li>
+                            <li onclick="openCity(event, 'right02')" class="btn_choice">嚴選肉品</li>
+                            <li onclick="openCity(event, 'right03')" class="btn_choice">新鮮時蔬</li>
+                            <li onclick="openCity(event, 'right04')" class="btn_choice">特選附餐</li>
+                            <li onclick="openCity(event, 'right05')" class="btn_choice">涮嘴飲品</li>
                         </ul>
                     </div>
                     <!-- 選湯底 -->
@@ -485,60 +485,27 @@
 
     <!-- NAV -->
     <script src="js/rwd.js"></script>
-
+    
     <script>
-        let my_block = document.getElementsByClassName("btn_choice");
-        for (let i = 0; i < my_block.length; i++) {
-            my_block[i].addEventListener("click", function onClick(e) {
-                //e.stopPropagation();
-                for (let i = 0; i < my_block.length; i++) {
-                    my_block[i].style.backgroundColor = "#999";
-                }
-                this.style.backgroundColor = "#D3442D";
-            })
+        function openCity(evt, setName) {
+            // Declare all variables
+            var i, set_right, btn_choice;
 
-        };
+            // Get all elements with class="set_right" and hide them
+            set_right = document.getElementsByClassName("set_right");
+            for (i = 0; i < set_right.length; i++) {
+                set_right[i].style.display = "none";
+            }
 
-    </script>
+            // Get all elements with class="btn_choice" and remove the class "active"
+            btn_choice = document.getElementsByClassName("btn_choice");
+            for (i = 0; i < btn_choice.length; i++) {
+                btn_choice[i].className = btn_choice[i].className.replace(" active", "");
+            }
 
-    <script>
-
-
-        function left01() {
-            document.getElementById('right01').style.display = 'block';
-            document.getElementById('right02').style.display = 'none';
-            document.getElementById('right03').style.display = 'none';
-            document.getElementById('right04').style.display = 'none';
-            document.getElementById('right05').style.display = 'none';
-        }
-
-        function left02() {
-            document.getElementById('right02').style.display = 'block';
-            document.getElementById('right01').style.display = 'none';
-            document.getElementById('right03').style.display = 'none';
-            document.getElementById('right04').style.display = 'none';
-            document.getElementById('right05').style.display = 'none';
-        }
-        function left03() {
-            document.getElementById('right03').style.display = 'block';
-            document.getElementById('right01').style.display = 'none';
-            document.getElementById('right02').style.display = 'none';
-            document.getElementById('right04').style.display = 'none';
-            document.getElementById('right05').style.display = 'none';
-        }
-        function left04() {
-            document.getElementById('right04').style.display = 'block';
-            document.getElementById('right01').style.display = 'none';
-            document.getElementById('right02').style.display = 'none';
-            document.getElementById('right03').style.display = 'none';
-            document.getElementById('right05').style.display = 'none';
-        }
-        function left05() {
-            document.getElementById('right05').style.display = 'block';
-            document.getElementById('right01').style.display = 'none';
-            document.getElementById('right02').style.display = 'none';
-            document.getElementById('right03').style.display = 'none';
-            document.getElementById('right04').style.display = 'none';
+            // Show the current tab, and add an "active" class to the link that opened the tab
+            document.getElementById(setName).style.display = "block";
+            evt.currentTarget.className += " active";
         }
     </script>
 
