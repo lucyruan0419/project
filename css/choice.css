@@ -1,11 +1,12 @@
 .concept {
     position: relative;
-    min-width: 1400px;
+    min-width: 1200px;
+    
 }
 
 .wrapper_bg {
     width: 100%;
-    min-width: 1400px;
+    min-width: 1200px;
     position: absolute;
     height: 1050px;
     background-image: url("../img/45degreee_fabric.webp");
@@ -15,7 +16,7 @@
 
 .wrapper_bg2 {
     width: 100%;
-    min-width: 1400px;
+    min-width: 1200px;
     position: absolute;
     background-image: url("../img/45degreee_fabric.webp");
     opacity: .6;
@@ -28,9 +29,10 @@
 
 .choice_concept {
     width: 1200px;
-    margin: 180px auto;
+    margin: 180px auto 90px;
     position: relative;
-    height: 850px;
+    height: 940px;
+    overflow: hidden;
 
 }
 
@@ -110,6 +112,12 @@
     right: 210px;
     top: -250px;
 }
+@media screen and (max-width: 1460px) {
+    .choice_img2 {
+        width: 740px;
+        top: -200px;
+    }
+}
 
 .choice_img3 {
     background-image: url("../img/choice_03.png");
@@ -127,7 +135,7 @@
 
 .column_bg {
     width: 100%;
-    min-width: 1400px;
+    min-width: 1200px;
     position: relative;
     background-image: url("../img/45degreee_fabric.webp");
 }
@@ -222,7 +230,7 @@
 
 .wrapper_bg3 {
     width: 100%;
-    min-width: 1400px;
+    min-width: 1200px;
     position: absolute;
     height: 1000px;
     background-image: url("../img/45degreee_fabric.webp");
@@ -237,10 +245,12 @@
     border-radius: 0 0 20px 20px;
     margin-top: 0;
     height: 900px;
-    width: 1300px;
+    width: 1200px;
     box-shadow: 3px 3px 3px rgb(183, 183, 183);
     position: relative;
     z-index: 4;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .set_price {
@@ -251,7 +261,7 @@
     border-radius: 30px;
     background-color: #fff;
     color: #D1512D;
-    margin: 80px 100px;
+    margin: 80px 70px;
     position: absolute;
     display: flex;
     align-items: center;
@@ -261,7 +271,7 @@
 
 .set {
     display: flex;
-    margin: 150px 100px 80px;
+    margin: 150px 70px 80px;
     position: absolute;
 }
 
