@@ -58,7 +58,7 @@
     }
 
     .choice_column>h1{
-        top: 35%;
+        top: 30%;
     }
 
     .choice_column_img:after{
@@ -67,6 +67,7 @@
 
     .show{
         display: block;
+        top: 70%;
     }
     /* MENU區 */
     .choice_wrapper{
@@ -90,7 +91,7 @@
     .set_left{
         margin: 0;
         border-left: 1px dashed #999 ;
-        padding: 0 20px;
+        padding: 0 15px;
     }
     .set_menu{
         display: flex;
@@ -137,6 +138,7 @@
         border-radius: 20px;
         padding: 0 ;
         margin-bottom: 15px;
+        width: 135px;
     }
 
     .wrapper_bg3{

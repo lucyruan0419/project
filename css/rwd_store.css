@@ -37,6 +37,7 @@
   }
 
   a.mobilecorner{
+    display: block;
     position: absolute;
     right: 25px;
     top: 25px;

@@ -11,7 +11,7 @@
 .list li {
     flex-grow: 1;
     flex-shrink: 0;
-    width: 470px;
+    width: 440px;
     border-radius: 30px;
     height: 270px;
     background-color: #fff;
@@ -47,7 +47,7 @@
 .list li .link_button {
     display: flex;
     margin: 0 auto;
-    width: 500px;
+    width: 455px;
     justify-content: flex-end;
     height: 60px;
 
@@ -103,4 +103,8 @@
 
 .down {
     text-align: center;
+}
+
+.mobilecorner{
+    display: none;
 }
