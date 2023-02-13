@@ -35,7 +35,7 @@
     <!-- header -->
     <header>
         <div class="header_logo"><a href="#"><img src="img/logo-white.svg" alt=""></a></div>
-        
+
         <nav>
 
             <ul class="navi">
@@ -47,11 +47,12 @@
                 <li><a href="faq.html">常見問題</a></li>
                 <li><a href="#"><img src="img/social_fb.svg" alt="facebook連結"></a>
                     <a href="#"><img src="img/social_ig.svg" alt="instagram連結"></a>
-                    <a href="#"><img src="img/social_line.svg" alt="LINE官方帳號連結"></a></li>
+                    <a href="#"><img src="img/social_line.svg" alt="LINE官方帳號連結"></a>
+                </li>
             </ul>
 
         </nav>
-        
+
         <div class="hamburger">
             <div class="line1"></div>
             <div class="line2"></div>
@@ -407,11 +408,28 @@
 
     <!-- 開場動畫 -->
     <script>
-        setTimeout(() => {
-            const box = document.getElementById('box');
-            box.style.display = 'none';
 
-        }, 3000); 
+        checkSession();
+
+        function checkSession() {
+            var v = getCookie("visited");
+            if (v === "yes") {
+                
+                box.style.display = 'none';
+            } else {
+             
+                setTimeout(() => {
+                    const box = document.getElementById('box');
+                    box.style.display = 'none';
+
+                }, 3000);
+            }
+            setCookie("visited", "yes", 1); // 建立 cookie可以活一天
+        }
+
+
+
+
     </script>
     <!-- 滾動 -->
     <script>
