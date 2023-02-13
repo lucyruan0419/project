@@ -258,9 +258,9 @@
             e.preventDefault();
             // hide all span
             var $this = $(this).parent().find('.answer');
-            $("i.fa-minus").find('.answer').removeClass("fa-minus").addClass('fa-plus');
+            
             $(".answer").not($this).slideUp(); 
-
+            $("i.fa-minus").removeClass("fa-minus").addClass('fa-plus');
            
             $this.slideToggle("fast");
             $("i", this).toggleClass("fa-solid fa-plus fa-solid fa-minus");
