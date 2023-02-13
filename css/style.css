@@ -108,6 +108,9 @@ header {
     padding-left: 1px;
 }
 
+.navi li:first-child,.navi li:last-child{
+    display: none;
+}
 .navi li a {
     text-align: center;
     line-height: 36px;

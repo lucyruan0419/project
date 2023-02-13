@@ -26,13 +26,19 @@
     <header>
         <div class="header_logo"><a href="index.html"><img src="img/logo-white.svg" alt="LOGO"></a></div>
         <nav>
+
             <ul class="navi">
+                <li><a href="news.html"><img src="./img/logo-white.svg" alt=""></a></li>
                 <li><a href="news.html">最新消息</a></li>
                 <li><a href="about.html">關於我們</a></li>
-                <li><a class="current" href="#">嚴選好料</a></li>
+                <li><a href="choice.html">嚴選好料</a></li>
                 <li><a href="store.html">門市資訊</a></li>
                 <li><a href="faq.html">常見問題</a></li>
+                <li><a href="#"><img src="img/social_fb.svg" alt="facebook連結"></a>
+                    <a href="#"><img src="img/social_ig.svg" alt="instagram連結"></a>
+                    <a href="#"><img src="img/social_line.svg" alt="LINE官方帳號連結"></a></li>
             </ul>
+
         </nav>
         <div class="hamburger">
             <div class="line1"></div>
@@ -488,22 +494,18 @@
     
     <script>
         function openCity(evt, setName) {
-            // Declare all variables
             var i, set_right, btn_choice;
 
-            // Get all elements with class="set_right" and hide them
             set_right = document.getElementsByClassName("set_right");
             for (i = 0; i < set_right.length; i++) {
                 set_right[i].style.display = "none";
             }
 
-            // Get all elements with class="btn_choice" and remove the class "active"
             btn_choice = document.getElementsByClassName("btn_choice");
             for (i = 0; i < btn_choice.length; i++) {
                 btn_choice[i].className = btn_choice[i].className.replace(" active", "");
             }
 
-            // Show the current tab, and add an "active" class to the link that opened the tab
             document.getElementById(setName).style.display = "block";
             evt.currentTarget.className += " active";
         }
