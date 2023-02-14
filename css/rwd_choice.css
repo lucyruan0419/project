@@ -15,6 +15,7 @@
     .choice_concept{
         order: 3;
         height: auto;
+        /* padding: 0 40px; */
     }
     .choice_title{
        
@@ -36,11 +37,15 @@
     .choice_img3{
         display: none;
     }
+    
     .choice_item{
         width: 100%;
         flex-direction: column;
         position: static;
 
+    }
+    .item>img{
+        width: 130px;
     }
     .wrapper_bg {
         min-width: auto;

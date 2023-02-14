@@ -72,6 +72,10 @@
     overflow: hidden;
 }
 
+@media screen and (max-width: 1600px) {
+    .about_img2 {width: 64%;}
+}
+
 .about_img3 {
     background-image: url("../img/about03.jpg");
     background-repeat: no-repeat;

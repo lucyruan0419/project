@@ -108,3 +108,8 @@
 .mobilecorner{
     display: none;
 }
+
+.clear{
+    clear: both;
+    height: 0;
+  }
