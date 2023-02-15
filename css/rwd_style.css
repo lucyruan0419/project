@@ -8,7 +8,7 @@
   }
 
   h3 {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   h4 {
@@ -138,6 +138,7 @@
   /* 輪播 */
   .carousel {
     width: 100%;
+    height: 690px;
   }
 
   .swiper {
@@ -188,22 +189,42 @@
     margin: 20px auto 0;
   }
 
+  .index-news-leftdown{
+    bottom: -100px;
+    width: 250px;
+    height: 250px;
+    left: -120px;
+  }
+  .news_swiper-slide{
+    height: 420px;
+  }
+
+  .news_swiper{
+    height: 520px;
+  }
+
   .index-news .atext,
   .index-news .btext {
     color: black;
   }
+  
 
   .animation_wrapper {
     min-width: auto;
   }
 
+  .animation_wrapper{
+    min-height: 640px;
+  }
+
   .news_title {
-    font-size: 1.2rem;
+    font-size: 1rem;
     display: -webkit-box;
     text-overflow: ellipsis;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     white-space: initial;
+    width: 290px;
   }
 
   .news_date {
@@ -221,25 +242,25 @@
 
   .intro::before {
     content: ' ';
-    width: 400px;
-    height: 100px;
-    background-image: url("../img/wave.svg");
+    width: 158px;
+    height: 180px;
+    background-image: url("../img/bg_orangecircle.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     position: absolute;
-    right: -110px;
-    top: -50px;
+    right: 30px;
+    top: -40px;
   }
 
   .intro::after {
     content: ' ';
-    width: 400px;
-    height: 200px;
-    background-image: url("../img/wave.svg");
+    width: 220px;
+    height: 220px;
+    background-image: url("../img/bg_yellowcircle.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     position: absolute;
-    left: 0px;
+    left: 10px;
     bottom: -100px;
   }
 
@@ -262,6 +283,7 @@
   .keylayer02 {
     min-width: auto;
     overflow: hidden;
+    height: 790px;
   }
 
   .keylayer02::before {
@@ -279,7 +301,7 @@
   }
 
   .keylayer02>img {
-    width: 750px;
+    width: 700px;
   }
 
   .index-newpot {
@@ -288,7 +310,10 @@
   }
 
   .text_animation {
-    font-size: 75px;
+    font-size: 72px;
+    line-height: 90px;
+    padding: 0 30px;
+    height: 800px;
   }
 
   .newpot_swiper-slide {
@@ -319,6 +344,17 @@
     margin: 20px 0 0 20px;
   }
 
+  .newpot_content > h2{
+    font-size: 26px;
+  }
+
+  .newpot_content > h2 > br{
+    display: none;
+  }
+
+  .newpot_content>p{
+    margin-top: 15px;
+  }
   .btn_white {
     margin-top: 80px;
   }

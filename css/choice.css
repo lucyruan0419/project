@@ -29,7 +29,7 @@
 
 .choice_concept {
     width: 1200px;
-    margin: 180px auto 90px;
+    margin: 80px auto 90px;
     position: relative;
     height: 940px;
     overflow: hidden;
@@ -93,12 +93,12 @@
     background-image: url("../img/choice_01.png");
     background-repeat: no-repeat;
     background-position: right top;
-    width: 380px;
+    width: 350px;
     height: 615px;
     background-size: contain;
     position: absolute;
     right: 0;
-    top: -450px;
+    top: -420px;
 }
 
 .choice_img2 {
@@ -106,11 +106,11 @@
     background-repeat: no-repeat;
     background-position: right top;
     background-size: contain;
-    width: 870px;
+    width: 850px;
     height: 850px;
     position: absolute;
     right: 210px;
-    top: -250px;
+    top: -200px;
 }
 @media screen and (max-width: 1460px) {
     .choice_img2 {
@@ -124,11 +124,11 @@
     background-repeat: no-repeat;
     background-position: right top;
     background-size: contain;
-    width: 800px;
-    height: 800px;
+    width: 750px;
+    height: 750px;
     position: absolute;
     left: 0;
-    top: 300px;
+    top: 330px;
 }
 
 /* 中間三格 */
