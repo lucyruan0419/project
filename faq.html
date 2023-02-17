@@ -224,7 +224,7 @@
     <script src="js/rwd.js"></script>
 
     <!-- JS版本-->
-    <!--     <script>
+    <!--         <script>
         var dropdown = document.getElementsByClassName("quetion");
         var i;
 
@@ -243,34 +243,33 @@
                     dropdownContent.style.display = "block";
                 }
             });
-        }<i class="fa-solid fa-minus"></i>
+        }
 
     </script>  -->
 
     <!-- JQ版本-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-
     <script>
         $('.answer').hide();
-        //   $("i.fa-minus").removeClass("fa-minus").addClass('fa-plus');
         $('.quetion').click(function (e) {
 
-            // e.preventDefault();
-            // hide all span
             var $this = $(this).parent().find('.answer');
-            $("i.fa-minus").removeClass("fa-minus").addClass('fa-plus');
+            $("i").not($(this).find('i')).removeClass("fa-minus").addClass('fa-plus')
             $(".answer").not($this).slideUp();
+            $this.slideToggle("fast");
+            // if($("i", this).hasClass('fa-plus')){
+            //     $("i",this).removeClass("fa-plus").addClass('fa-minus ')
+            // }else{
+            //     $("i",this).removeClass("fa-minus").addClass('fa-plus ')
+            // }
+            $("i", this).toggleClass("fa-solid fa-plus fa-solid fa-minus");
+        });
 
-
-                $this.slideToggle("fast");
-                $("i", this).toggleClass("fa-solid fa-plus fa-solid fa-minus");
-                // $("i.fa-minus").removeClass("fa-minus").addClass('fa-plus');
-            });
     </script>
-    <!--       <script>
+    <!--     <script>
 
         // 收合選單
-/*         $('.quetion').click(function (e) {
+         $('.quetion').click(function (e) {
             e.preventDefault();
             //只要i有減號就強制移除再加入+號
             // $("i.fa-minus").removeClass("fa-minus").addClass('fa-plus');
@@ -278,17 +277,10 @@
             $(this).parent().siblings().find('.answer').slideUp();
 
             $("i", this).toggleClass("fa-solid fa-plus fa-solid fa-minus");
-
-            if ($('.answer').css('display') == 'none') {
-                $("i.fa-minus").removeClass("fa-minus").addClass('fa-plus');
-            }else{
-                $("i.fa-plus").removeClass("fa-plus").addClass('fa-minus');
-            }
- */
         });
 
 
-    </script>  -->
+    </script> -->
 
 </body>
 

@@ -4,17 +4,26 @@
     min-width: auto;
     height: auto;
     box-sizing: border-box;
-    width: 100%;
+    width: 90%;
+  }
+
+  .list li{
+    margin: 0 0px 20px 0px;
   }
 
   .content {
-    width: 90%;
+    width: 95%;
+    margin-bottom: 0;
   }
 
   .content>img {
     width: 100%;
+    margin-bottom: 10px;
   }
   .para{
-    width: 95%;
+    width: 100%;
+  }
+  .para_subtitle, .para_notice{
+    margin: 20px 0;
   }
   }

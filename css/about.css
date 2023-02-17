@@ -129,3 +129,13 @@
 .recommend-choice > .recommend_title{
     padding-top: 100px;
 }
+
+@media screen and (max-width: 428px) {
+    .about_title{
+        /* padding: 0 5px 30px; */
+    }
+
+    .wrapper_bg{
+        margin-top: 20px;
+    }
+}
