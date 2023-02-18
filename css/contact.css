@@ -40,7 +40,7 @@ input[name="gender"] {
 }
 
 .form-control:focus {
-    outline: 1px solid;
+    outline: 0;
     border-radius: 20px;
 }
 
@@ -50,6 +50,8 @@ input[name="gender"] {
 
 input:-webkit-autofill {
     box-shadow: 0 0 0 9999px #fff inset;
+    -webkit-appearance: none;
+    border-radius: 0;
 }
 
 input {
@@ -176,7 +178,8 @@ input {
         flex-direction: column;
         align-items: flex-start;
     }
-    .form-group > label {
+
+    .form-group>label {
         padding-left: 18px;
     }
 
@@ -198,13 +201,15 @@ input {
         width: 100%;
     }
 
-    .list_top h3{
+    .list_top h3 {
         margin: auto;
-      }
-      .list_top h3>br{
+    }
+
+    .list_top h3>br {
         display: none;
-      }
-      .list_top > img{
+    }
+
+    .list_top>img {
         width: 70%;
-      }
+    }
 }
