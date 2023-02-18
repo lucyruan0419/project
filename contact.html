@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="阮這鍋即享鍋，主打簡單、健康、美味，並且幫您煮好
+    適合忙碌的上班族，短暫的午休也可以吃到現煮鍋物，即使外帶也不影響口感">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阮這鍋 | 即享鍋</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="bookmark" href="favicon.ico" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/rwd_style.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="header_logo"><a href="index.html"><img src="img/logo-white.svg" alt="LOGO"></a></div>
+        <nav>
+
+            <ul class="navi">
+                <li><a href="news.html"><img src="./img/logo-white.svg" alt="LOGO圖"></a></li>
+                <li><a href="news.html">最新消息</a></li>
+                <li><a href="about.html">關於我們</a></li>
+                <li><a href="choice.html">嚴選好料</a></li>
+                <li><a href="store.html">門市資訊</a></li>
+                <li><a href="faq.html">常見問題</a></li>
+                <li><a href="#"><img src="img/social_fb.svg" alt="facebook連結"></a>
+                    <a href="#"><img src="img/social_ig.svg" alt="instagram連結"></a>
+                    <a href="#"><img src="img/social_line.svg" alt="LINE官方帳號連結"></a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="header_social">
+            <li><a href="#"><img src="img/social_fb.svg" alt="facebook連結"></a></li>
+            <li><a href="#"><img src="img/social_ig.svg" alt="instagram連結"></a></li>
+            <li><a href="#"><img src="img/social_line.svg" alt="LINE官方帳號連結"></a></li>
+        </ul>
+    </header>
+
+    <!-- main -->
+
+    <main>
+        <div class="bg"></div>
+
+        <section class="title wrapper">
+
+            <div class="title_text">
+                <h2 class="atitle">Contact</h2>
+                <h3 class="btitle">意見回饋</h3>
+            </div>
+            <div class="title_block">
+            </div>
+
+        </section>
+        <div class="wrapper_bg">
+            <section class="list_top">
+                <img src="img/faq.svg" alt="QA圖">
+                <h3>如有其他疑問<br>
+                    歡迎來電</h3>
+
+            </section>
+
+            <section>
+                <!-- Left contact page -->
+
+                <form id="contact-form" class="form-horizontal" role="form" method="post" action="sendmail.php">
+
+                    <div class="form-group">
+                        <label for="name">姓名</label>
+                            <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value=""
+                                required>
+                        
+                    </div>
+                    <div class="gender">
+
+                            <input type="radio" id="male" name="gender" value="">
+                            <label for="male">先生</label>
+                            <input type="radio"id="female" name="gender" value="">
+                            <label for="female">小姐</label>
+                        
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">EMAIL</label>
+                            <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email"
+                                value="" required>
+                       
+                    </div>
+                    <div class="form-group">
+                        <label for="mobile">聯絡電話</label>
+                            <input type="tel" class="form-control" id="mobile" placeholder="MOBILE" name="mobile"
+                                value="" required>
+                       
+                    </div>
+                    <div class="overflow">
+                    <textarea class="form-message" rows="10" placeholder="請留下您寶貴的意見" name="message" required></textarea>
+                </div>
+                    <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND" onclick="checkform();"/>
+                        <div class="alt-send-button">
+                            <i class="fa fa-paper-plane"></i><span class="send-text">送出</span>
+                        </div>
+
+                    </button>
+
+                </form>
+
+                <!-- Left contact page -->
+                <!--   <form id="form1" name="form1" method="post" action="sendmail.php">
+                    <h2>線上客服系統</h2>
+
+                    <label for="sndname">姓名</label>
+                    <input type="text" name="sndname" id="sndname" />
+
+                    <label for="sndmail">EMAIL</label>
+                    <input type="text" name="sndmail" id="sndmail" />
+
+                    <label for="sndtel">連絡電話</label>
+                    <input type="text" name="sndtel" id="sndtel" />
+                    
+                    <select name="subject" id="subject">
+                        <option value="站務問題" selected="selected">站務問題</option>
+                        <option value="合作提案">合作提案</option>
+                        <option value="其它問題">其它問題</option>
+                        </select>
+                        <label for="sendbody">回應內容</label>
+                        <textarea name="sendbody" id="sendbody"></textarea>
+
+                        <label></label>
+                    <input type="button" name="button" id="button" value="送 出" class="btn" onclick="checkform();"/>
+                    
+                    </form> -->
+            </section>
+            <section class="list_bottom">
+
+            </section>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer_containter">
+            <div class="footer_logo"><a href="index.html"><img src="img/logo-white.svg" alt="LOGO"></a></div>
+            <ul class="footer_social">
+                <li><a href="#"><img src="img/social_fb.svg" alt="facebook連結"></a></li>
+                <li><a href="#"><img src="img/social_ig.svg" alt="instagram連結"></a></li>
+                <li><a href="#"><img src="img/social_line.svg" alt="LINE官方帳號連結"></a></li>
+            </ul>
+
+            <ul class="footer_sitemap">
+                <li><a href="news.html">最新消息</a></li>
+                <li><a href="about.html">關於我們</a></li>
+                <li><a href="choice.html">嚴選食材</a></li>
+                <li><a href="store.html">門市資訊</a></li>
+                <li><a href="faq.html">常見問題</a></li>
+            </ul>
+
+            <div class="footer_contact">我們重視您的意見，如有疑問請聯絡我們 <a href="tel:02-00000000">02-0000-0000</a>　<a
+                    href="mailto:">service@service.com.tw</a></div>
+            <div class="footer_copyright">本網站為緯育TibaMe前端工程師班第82期學員專題作品,本平台僅供學習、展示之用。
+                <a href="https://docs.google.com/document/d/1RpSZirHG1udNNeUzWH4Kmhel9mV7SHwQW_19rauXo0s/edit?usp=sharing"
+                    target="_blank">參考資源連結</a>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- NAV -->
+    <script src="js/rwd.js"></script>
+
+
+
+</body>
+
+</html>

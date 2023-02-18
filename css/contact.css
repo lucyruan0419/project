@@ -1,0 +1,209 @@
+/* Left contact page */
+.form-horizontal {
+    /*float: left;*/
+    width: 550px;
+    font-family: 'Lato';
+    font-weight: 400;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 550px;
+}
+
+.form-control {
+    width: 450px;
+    line-height: 50px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding-left: 20px;
+    border-radius: 25px;
+    display: flex;
+    border: 1px solid #b4b4b4;
+    background-color: rgb(255, 242, 227);
+}
+
+.form-control::placeholder,
+.form-message::placeholder {
+    color: #ccc;
+}
+
+input[name="gender"] {
+    accent-color: red;
+}
+
+.form-control:focus {
+    outline: 1px solid;
+}
+
+.form-message:focus {
+    outline: 0;
+}
+
+input:-webkit-autofill {
+    box-shadow: 0 0 0 9999px #fff inset;
+}
+
+input {
+    background-color: #fdf4f0 !important;
+}
+
+.gender {
+    padding-left: 80px;
+    align-self: flex-start;
+    margin: 0 0 20px;
+}
+
+.overflow {
+    width: 550px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.form-message {
+    width: 550px;
+    line-height: 30px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding: 10px 20px 10px;
+    border-radius: 25px;
+    display: flex;
+    box-sizing: border-box;
+    border: 1px solid #b4b4b4;
+    resize: none;
+
+}
+
+/* width */
+.form-message::-webkit-scrollbar {
+    width: 10px;
+    overflow: hidden;
+}
+
+/* Track */
+.form-message::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+    opacity: 0;
+
+}
+
+/* Handle */
+.form-message::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 5px;
+
+}
+
+/* Handle on hover */
+.form-message::-webkit-scrollbar-thumb:hover {
+    background: #666;
+    border-radius: 5px;
+}
+
+.send-button {
+    margin-top: 15px;
+    height: 35px;
+    width: 200px;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+    border: 0;
+    font-size: 18px;
+    margin-bottom: 100px;
+}
+
+.alt-send-button {
+    width: 200px;
+    height: 35px;
+    transition: all .2s ease-in-out;
+    padding: 21px 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: -5px;
+
+}
+
+.send-text {
+    display: block;
+    margin: 12px 0 15px;
+    font-size: 16px;
+
+    letter-spacing: 2px;
+}
+
+.alt-send-button:hover {
+    transform: translate3d(0px, -31px, 0px);
+}
+
+/* FAQ */
+@media screen and (max-width: 428px) {
+
+
+    .wrapper_bg {
+        min-width: auto;
+        height: auto;
+        box-sizing: border-box;
+        width: 100%;
+        border-radius: 25px;
+    }
+
+    .list_top {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 50px;
+        height: 210px;
+        margin-bottom: 50px;
+        box-shadow: none;
+    }
+
+    .form-horizontal {
+        width: 85%;
+    }
+
+    .form-group {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .form-group > label {
+        padding-left: 18px;
+    }
+
+    .gender {
+        align-self: flex-end;
+        padding-right: 15px;
+        margin-top: 0;
+    }
+
+    .form-control {
+        width: 92%;
+    }
+
+    .overflow {
+        width: 100%;
+    }
+
+    .form-message {
+        width: 100%;
+    }
+
+    .list_top h3{
+        margin: auto;
+      }
+      .list_top h3>br{
+        display: none;
+      }
+      .list_top > img{
+        width: 70%;
+      }
+}
