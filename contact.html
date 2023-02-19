@@ -16,6 +16,9 @@
 
     <link rel="stylesheet" href="css/rwd_style.css">
     <link rel="stylesheet" href="css/contact.css">
+    <meta itemprop="url"
+        content="https://docs.google.com/forms/d/e/1FAIpQLSevPFf4SkF63HRAaLfD-kJkmlMHMQiVCa0hOpv_mphI1QHjlw/viewform?pli=1&amp;pli=1&amp;usp=embed_googleplus"
+        wfd-invisible="true">
 </head>
 
 <body>
@@ -31,7 +34,8 @@
                 <li><a href="choice.html">嚴選好料</a></li>
                 <li><a href="store.html">門市資訊</a></li>
                 <li><a href="faq.html">常見問題</a></li>
-                <li><a href="#"><img src="img/social_fb.svg" alt="facebook連結"></a>
+                <li><a href="contact.html"><img src="img/social_mail.svg" alt="MAIL"></a>
+                    <a href="#"><img src="img/social_fb.svg" alt="facebook連結"></a>
                     <a href="#"><img src="img/social_ig.svg" alt="instagram連結"></a>
                     <a href="#"><img src="img/social_line.svg" alt="LINE官方帳號連結"></a>
                 </li>
@@ -45,12 +49,12 @@
             <div class="line3"></div>
         </div>
         <ul class="header_social">
+            <li><a href="contact.html"><img src="img/social_mail.svg" alt="MAIL"></a></li>
             <li><a href="#"><img src="img/social_fb.svg" alt="facebook連結"></a></li>
             <li><a href="#"><img src="img/social_ig.svg" alt="instagram連結"></a></li>
             <li><a href="#"><img src="img/social_line.svg" alt="LINE官方帳號連結"></a></li>
         </ul>
     </header>
-
     <!-- main -->
 
     <main>
@@ -59,7 +63,7 @@
         <section class="title wrapper">
 
             <div class="title_text">
-                <h2 class="atitle">Contact</h2>
+                <h2 class="atitle">MAIL</h2>
                 <h3 class="btitle">聯絡我們</h3>
             </div>
             <div class="title_block">
@@ -69,47 +73,53 @@
         <div class="wrapper_bg">
             <section class="list_top">
                 <img src="img/faq.svg" alt="QA圖">
-                <h3>如有其他疑問<br>
-                    歡迎來電</h3>
+                <h3>請留下資訊<br>
+                    將有專員為您服務</h3>
+                
+
 
             </section>
 
             <section>
-                <!-- Left contact page -->
-
-                <form id="contact-form" class="form-horizontal" role="form" method="post" action="sendmail.php">
+                <!-- contact page -->
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display: none;"
+                    onload="this.onload=function(){window.location='contact_success.html'}"></iframe>
+                <form id="contact-form" class="form-horizontal" role="form" action="https://formspree.io/f/mjvdwykn"
+                    method="post" target="hidden_iframe">
 
                     <div class="form-group">
                         <label for="name">姓名</label>
-                            <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value=""
-                                required>
-                        
+                        <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value=""
+                            required="">
+
                     </div>
                     <div class="gender">
 
-                            <input type="radio" id="male" name="gender" value="">
-                            <label for="male">先生</label>
-                            <input type="radio"id="female" name="gender" value="">
-                            <label for="female">小姐</label>
-                        
+                        <input type="radio" id="male" name="gender" value="先生">
+                        <label for="male">先生</label>
+                        <input type="radio" id="female" name="gender" value="小姐">
+                        <label for="female">小姐</label>
+
                     </div>
 
                     <div class="form-group">
                         <label for="email">EMAIL</label>
-                            <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email"
-                                value="" required>
-                       
+                        <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value=""
+                            required="">
+
                     </div>
                     <div class="form-group">
                         <label for="mobile">聯絡電話</label>
-                            <input type="tel" class="form-control" id="mobile" placeholder="MOBILE" name="mobile"
-                                value="" required>
-                       
+                        <input type="tel" class="form-control" id="mobile" placeholder="MOBILE" name="mobile" value=""
+                            required="">
+
                     </div>
                     <div class="overflow">
-                    <textarea class="form-message" rows="10" placeholder="請留下您寶貴的意見" name="message" required></textarea>
-                </div>
-                    <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND" onclick="checkform();"/>
+                        <textarea class="form-message" rows="10" placeholder="請留下您寶貴的意見" name="message"
+                            required=""></textarea>
+                    </div>
+                    <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND"
+                        onclick="checkform();">
                         <div class="alt-send-button">
                             <i class="fa fa-paper-plane"></i><span class="send-text">送出</span>
                         </div>
@@ -118,31 +128,8 @@
 
                 </form>
 
-                <!-- Left contact page -->
-                <!--   <form id="form1" name="form1" method="post" action="sendmail.php">
-                    <h2>線上客服系統</h2>
-
-                    <label for="sndname">姓名</label>
-                    <input type="text" name="sndname" id="sndname" />
-
-                    <label for="sndmail">EMAIL</label>
-                    <input type="text" name="sndmail" id="sndmail" />
-
-                    <label for="sndtel">連絡電話</label>
-                    <input type="text" name="sndtel" id="sndtel" />
-                    
-                    <select name="subject" id="subject">
-                        <option value="站務問題" selected="selected">站務問題</option>
-                        <option value="合作提案">合作提案</option>
-                        <option value="其它問題">其它問題</option>
-                        </select>
-                        <label for="sendbody">回應內容</label>
-                        <textarea name="sendbody" id="sendbody"></textarea>
-
-                        <label></label>
-                    <input type="button" name="button" id="button" value="送 出" class="btn" onclick="checkform();"/>
-                    
-                    </form> -->
+                <!-- contact page -->
+                <!--   <form id="form1" name="form1" method="post" action="sendmail.php">-->
             </section>
             <section class="list_bottom">
 
@@ -155,6 +142,7 @@
         <div class="footer_containter">
             <div class="footer_logo"><a href="index.html"><img src="img/logo-white.svg" alt="LOGO"></a></div>
             <ul class="footer_social">
+                <li><a href="contact.html"><img src="img/social_mail.svg" alt="MAIL"></a></li>
                 <li><a href="#"><img src="img/social_fb.svg" alt="facebook連結"></a></li>
                 <li><a href="#"><img src="img/social_ig.svg" alt="instagram連結"></a></li>
                 <li><a href="#"><img src="img/social_line.svg" alt="LINE官方帳號連結"></a></li>

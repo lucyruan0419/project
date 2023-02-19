@@ -149,6 +149,22 @@ input {
 .alt-send-button:hover {
     transform: translate(0px, -31px);
 }
+.content{
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+.content > img{
+    margin-bottom: 100px;
+}
+.para_title{
+    margin: 0px 0 ;
+}
+
+.para > h4{
+    margin: 20px 0 ;
+    font-weight: normal;
+}
 
 /* FAQ */
 @media screen and (max-width: 428px) {
@@ -170,6 +186,7 @@ input {
         height: 210px;
         margin-bottom: 50px;
         box-shadow: none;
+        text-align: center;
     }
 
     .form-horizontal {
@@ -218,11 +235,20 @@ input {
         margin: auto;
     }
 
-    .list_top h3>br {
+    /* .list_top h3>br {
         display: none;
-    }
+    } */
 
     .list_top>img {
         width: 70%;
+    }
+    .content{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .content > img{
+        width: 100%;
+        margin-bottom: 80px;
     }
 }
