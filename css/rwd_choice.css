@@ -88,6 +88,9 @@
         padding: 0 15px;
         box-sizing: border-box;
     }
+    .set_price>i{
+        display: none;
+    }
     .set{
         margin: 10px 0 0;
         flex-direction: column;
