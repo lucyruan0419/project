@@ -22,12 +22,12 @@ function setCookie(cname, cvalue, exdays) {
     return "";
   }
     
-  // 檢查某 cookie 是否存在老師原版寫法
-/*   function checkCookie(cname) {
+  // 檢查某 cookie 是否存在
+  function checkCookie(cname) {
     var cookie_value = getCookie(cname);
     if (cookie_value != "") {
       return true;
     } else {
       return false;
     }
-  } */
+  }
