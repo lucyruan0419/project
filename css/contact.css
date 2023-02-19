@@ -50,7 +50,7 @@ input[name="gender"] {
 
 input:-webkit-autofill {
     box-shadow: 0 0 0 9999px #fff inset;
-    -webkit-appearance: none;
+    background-color: #fdf4f0;
     border-radius: 0;
 }
 
@@ -120,6 +120,7 @@ input {
     border: 0;
     font-size: 18px;
     margin-bottom: 100px;
+    background-color: #f1f1f1;
 }
 
 .alt-send-button {
@@ -137,14 +138,14 @@ input {
 
 .send-text {
     display: block;
-    margin: 12px 0 15px;
+    margin: 10px 0 15px;
     font-size: 16px;
 
     letter-spacing: 2px;
 }
 
 .alt-send-button:hover {
-    transform: translate3d(0px, -31px, 0px);
+    transform: translate(0px, -31px);
 }
 
 /* FAQ */
