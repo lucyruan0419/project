@@ -410,18 +410,50 @@
     <script src="js/rwd.js"></script>
 
     <!-- 開場動畫 -->
-    <script src="js/cookie.js"></script>
     <script>
+        // 設定 cookie
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        // 取得 cookie 的值
+        function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        // 檢查某 cookie 是否存在
+        function checkCookie(cname) {
+            var cookie_value = getCookie(cname);
+            if (cookie_value != "") {
+                return true;
+            } else {
+                return false;
+            }
+        }
 
         window.onload = checkCookie()
 
         function checkCookie() {
             var v = getCookie("visited");
             if (v === "yes") {
-                
+
                 box.style.display = 'none';
             } else {
-             
+
                 setTimeout(() => {
                     const box = document.getElementById('box');
                     box.style.display = 'none';
@@ -431,10 +463,8 @@
             setCookie("visited", "yes", 1); // 建立 cookie可以活一天
         }
 
+        /*   滾動  */
 
-    </script>
-    <!-- 滾動 -->
-    <script>
         let ani = document.getElementsByClassName("animation_wrapper")
 
         window.addEventListener('scroll', function () {
