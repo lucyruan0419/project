@@ -60,7 +60,7 @@
     flex-direction: column;
     clip-path: circle(25px at 89.5% 5px);
     -webkit-clip-path: circle(25px at 89.5% 35px);
-    transition: all .5s ease-out;
+    transition: all .6s ease-out;
     pointer-events: none;
     box-sizing: border-box;
     justify-content: center;
