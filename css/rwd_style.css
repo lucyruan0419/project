@@ -1,3 +1,253 @@
+@media screen and (max-width: 992px) {
+  .wrapper {
+    width: auto;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
+  /* 選單 */
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 58%;
+    transform: translate(-5%, -50%);
+    transition: all 0.7s ease;
+    z-index: 11;
+    width: 40px;
+    height: 40px;
+
+  }
+
+  header {
+    overflow: hidden;
+
+  }
+
+  .navi {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #FF8754;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    clip-path: circle(25px at 89.5% 5px);
+    -webkit-clip-path: circle(25px at 89.5% 35px);
+    transition: all .6s ease-out;
+    pointer-events: none;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navi.open {
+    clip-path: circle(2000px at 90% -10%);
+    -webkit-clip-path: circle(2000px at 90% -10%);
+    pointer-events: all;
+    top: 0;
+    box-sizing: border-box;
+  }
+
+  .navi li {
+    border-bottom: 2px solid #FFCC33;
+    margin-bottom: 25px;
+  }
+
+  .navi li:first-child {
+    width: 150px;
+    display: block;
+    border-bottom: 0;
+    margin-left: -10px;
+
+  }
+
+  .navi li:last-child {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 0;
+  }
+
+  .navi li:last-child>a>img {
+    width: 50px;
+    margin-top: 25px;
+  }
+
+  /*Animating Hamburger Icon on Click*/
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .line2 {
+    transition: all 0.7s ease;
+    width: 0;
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  /* header */
+  header {
+    min-width: auto;
+    padding: 0 25px;
+    height: 70px;
+  }
+
+  .header_social {
+    display: none;
+
+  }
+
+  /* 輪播 */
+  .carousel {
+    width: 100%;
+    height: 690px;
+  }
+
+  .swiper {
+    min-width: auto;
+  }
+
+  /* index News */
+  .news {
+    min-width: auto;
+    width: 100%;
+  }
+
+
+  .index-news {
+    width: 100vw;
+    margin: 20px auto 0;
+  }
+  .index-news .atext,.btext{
+    padding-left: 25px;
+  }
+
+  .index-news-left {
+    min-width: auto;
+    width: 45%;
+
+  }
+
+  .animation_wrapper {
+    min-width: auto;
+  }
+
+  /* 推薦鍋物 */
+  .keylayer02 {
+    min-width: auto;
+    overflow: hidden;
+    height: 790px;
+  }
+
+  .keylayer02::before {
+    min-width: auto;
+    background-size:
+      500px auto;
+    background-position:
+      20px bottom;
+  }
+
+  .keylayer02::after {
+    min-width: auto;
+    background-position: center;
+    background-size: 50%;
+  }
+
+  .index-newpot {
+    min-width: auto;
+
+  }
+
+
+  /* 查詢門市區塊 */
+  .recommend {
+    overflow: hidden;
+  }
+
+  .recommend-store {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    margin: 50px 0;
+
+  }
+
+  .recommend-store::after {
+    min-width: auto;
+    background-position: 650px -50px, left center, right bottom;
+    background-size: 250px auto, 200px auto, 250px auto;
+    height: 1580px;
+  }
+
+  /* footer */
+  .footer_containter {
+    min-width: auto;
+    height: auto;
+    padding: 20px 20px 5px;
+    text-align: center;
+    /* position: sticky;
+    bottom: 0; */
+  }
+
+  /* news列表 */
+
+  .bg {
+    height: 1000px;
+    min-width: auto;
+    overflow: hidden;
+    background-size: 200px auto, 150px auto, 170px auto;
+  }
+
+  /* 關於我們 */
+  .bg2 {
+    min-width: auto;
+    background-size: 200px auto, 150px auto, 170px auto, auto, auto;
+  }
+
+  .wrapper_bg {
+    min-width: auto;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .about_img2{
+    width: 50%;
+  }
+  .title {
+    min-width: auto;
+  }
+  .recommend-choice {
+    width: 100%;
+    margin: auto;
+    padding-left: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .recommend-store>.recommend_title {
+    padding-top: 10px;
+  }
+
+
+  .recommend-choice::after {
+    display: none;
+  }
+
+  .recommend_title>h1 {
+    font-size: 48px;
+  }
+
+  .recommend-choice>.recommend_title {
+    padding-top: 0px;
+  }
+
+}
+
+
 @media screen and (max-width: 428px) {
   h1 {
     font-size: 52px;
@@ -99,12 +349,6 @@
     margin-top: 25px;
   }
 
-  /* .navi li {
-    opacity: 0;
-  }
-  li.fade {
-    opacity: 1;
-  } */
 
 
   /*Animating Hamburger Icon on Click*/
@@ -181,7 +425,6 @@
     min-width: auto;
     width: 80%;
     background-color: rgba(255, 255, 255, 0);
-    ;
   }
 
   .index-news {
@@ -293,6 +536,9 @@
       500px auto;
     background-position:
       20px bottom;
+    border: 1px solid red;
+    right: 0;
+    width: 100vh;
   }
 
   .keylayer02::after {
