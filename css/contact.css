@@ -52,7 +52,7 @@ input:-webkit-autofill {
     box-shadow: 0 0 0 9999px #fff inset;
 
     border-radius: 25px;
-    appearance:none;
+    appearance: none;
     background-color: #fdf4f0;
 }
 
@@ -149,26 +149,99 @@ input {
 .alt-send-button:hover {
     transform: translate(0px, -31px);
 }
-.content{
+
+.content {
     width: 400px;
     margin: 0 auto;
     text-align: center;
 }
-.content > img{
+
+.content>img {
     margin-bottom: 100px;
 }
-.para_title{
-    margin: 0px 0 ;
+
+.para_title {
+    margin: 0px 0;
 }
 
-.para > h4{
-    margin: 20px 0 ;
+.para>h4 {
+    margin: 20px 0;
     font-weight: normal;
 }
 
-/* FAQ */
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 992px) {
+    .wrapper_bg{
+        height: auto;
+    }
+    .list_top {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 50px;
+        height: 210px;
+        margin-bottom: 50px;
+        box-shadow: none;
+        text-align: center;
+    }
 
+    .form-horizontal {
+        width: 85%;
+    }
+
+    .form-group {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-group>label {
+        padding-left: 18px;
+    }
+
+    .gender {
+        align-self: flex-end;
+        padding-right: 15px;
+        margin-top: 0;
+    }
+
+
+    .form-control {
+        width: 92%;
+    }
+
+    .overflow {
+        width: 100%;
+    }
+
+    .form-message {
+        width: 96%;
+    }
+
+    .list_top h3 {
+        margin: auto;
+    }
+
+    /* .list_top h3>br {
+        display: none;
+    } */
+
+    .list_top>img {
+        width: 70%;
+    }
+
+    .content {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .content>img {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (max-width: 428px) {
 
     .wrapper_bg {
         min-width: auto;
@@ -208,6 +281,7 @@ input {
         padding-right: 15px;
         margin-top: 0;
     }
+
     .alt-send-button {
         width: 200px;
         height: 35px;
@@ -219,6 +293,7 @@ input {
         flex-direction: column;
         margin-left: -19px;
     }
+
     .form-control {
         width: 92%;
     }
@@ -242,12 +317,14 @@ input {
     .list_top>img {
         width: 70%;
     }
-    .content{
+
+    .content {
         width: 90%;
         margin: 0 auto;
         text-align: center;
     }
-    .content > img{
+
+    .content>img {
         width: 100%;
         margin-bottom: 80px;
     }
